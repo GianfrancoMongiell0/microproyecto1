@@ -1,0 +1,76 @@
+<!DOCT<!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+        <title>Juego de Bingo</title>
+
+    </head>
+
+    <body>
+        <h1>Bingo de L0K0Z</h1>
+
+        <form id="formulario">
+            <fieldset>
+                <label for="jugador1">Nombre del Jugador 1:</label>
+                <input type="text" id="jugador1" required>
+                <label for="jugador2">Nombre del Jugador 2:</label>
+                <input type="text" id="jugador2" required>
+                <label for="jugador3">Nombre del Jugador 3:</label>
+                <input type="text" id="jugador3" required>
+                <label for="jugador4">Nombre del Jugador 4:</label>
+                <input type="text" id="jugador4" required>
+                <label for="tamanio">Tamaño del Cartón (n x n):</label>
+                <input type="number" id="tamanio" min="3" max="5" required>
+                <button type="button" onclick="iniciarJuego()">Iniciar Juego</button>
+            </fieldset>
+        </form>
+
+        <br><br>
+        <!-- ... (código anterior para ingresar nombres y seleccionar tamaño) ... -->
+
+        <div class="celdas">
+            <p id="jugador11">Jugador1</p>
+            <div class="carton" id="carton1"></div>
+
+
+            <p id="jugador22">Jugador2</p>
+            <div class="carton" id="carton2"></div>
+
+            <p id="jugador33">Jugador3</p>
+            <div class="carton" id="carton3"></div>
+
+            <p id="jugador44">Jugador4</p>
+            <div class="carton" id="carton4"></div>
+
+        </div>
+
+        <div id="bingo">
+
+            <fieldset>
+                <h2 class="text-bola">Dispensador</h2>
+                <div class="gg-shape-circle"><br><br>
+                    <div id="numero-bola-text"></div>
+                </div><br><br>
+                <p id="respuesta"></p>
+
+
+                <button id="sacar-bola">Sacar bola(0/25)</button>
+            </fieldset> 
+<p>hdasdadas    </p>
+        </div>
+
+
+
+
+        <script src="main.js"></script>
+    </body>
+
+    </html>

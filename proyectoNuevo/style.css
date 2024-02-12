@@ -1,0 +1,143 @@
+:root {
+
+    --primero: #f5f5f5;
+    --segundo: #e9e9e9;
+    --tercero: #014e4e;
+    --cuatro: #008584;
+    --quinto: #cccccc;
+}
+
+body {
+    font-family: 'Protest Riot', sans-serif;
+    background-color: var(--tercero);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--segundo);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border-radius: 10px;
+    padding: auto;
+    margin-left: auto;
+    background-color: var(--cuatro);
+    border-color: var(--tercero)
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--tercero);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input {
+
+    border-radius: 10px;
+}
+
+/* Estilos para el cartón de bingo */
+
+p {
+    color: var(--segundo);
+    font-size: 30px;
+}
+
+.numero {
+    border: 1px solid #d40000;
+    padding: 10px;
+    text-align: center;
+}
+
+.casilla {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#bingo {
+    text-align: center;
+
+}
+
+.gg-shape-circle {
+    margin: auto;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid;
+    border-radius: 100px
+}
+
+
+#numero-bola {
+    width: 10rem;
+    height: 10rem;
+    background-color: #000;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#numero-bola-text {
+    color: #000000;
+    align-items: center;
+    font-size: 70px;
+}
+
+.celdas {
+    display: block;
+}
+
+.casilla {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.tachado {
+    text-decoration: line-through;
+    /* Tacha el número */
+    background-color: #f0f0f0;
+    /* Cambia el color de fondo */
+}
+
+@media (min-width: 769px) {
+    .celdas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5rem;
+        row-gap: 3rem;
+
+    background-attachment: fixed;
+    }
+}
